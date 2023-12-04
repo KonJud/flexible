@@ -1,0 +1,4 @@
+liste des commandes utiliser pour la construction de ce programme.
+
+npm install @headlessui/react cloudinary jsonwebtoken graphql-request next-auth
+npm install @grafbase/sdk --save-dev
