@@ -1,7 +1,11 @@
 const Home = () => {
     return(
         <>
-            <h1>main Home Page ...</h1>
+            <section className="flex-start flex-col paddings mb-16">
+                <h1>Category</h1>
+                <h1>Post</h1>
+                <h1>LoadMore</h1> 
+            </section>
         </>
     )
 }
