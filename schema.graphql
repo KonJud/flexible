@@ -1,0 +1,21 @@
+type User {
+  id: ID!
+  name: String!
+  email: String! @unique
+  avatarUrl: URL
+  description: String
+  githubUrl: URL
+  linkedInUrl: URL
+  projects: [Project]
+}
+
+type Project {
+  id: ID!
+  title: String!
+  description: String!
+  image: URL!
+  liveSiteUrl: URL!
+  githubUrl: URL!
+  category: String! @search
+  createdBy: User!
+}
