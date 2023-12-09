@@ -1,4 +1,4 @@
-type User {
+type User @model {
   id: ID!
   name: String!
   email: String! @unique
@@ -6,10 +6,10 @@ type User {
   description: String
   githubUrl: URL
   linkedInUrl: URL
-  projects: [Project]
+  projects: [Project] @relation
 }
 
-type Project {
+type Project @model {
   id: ID!
   title: String!
   description: String!
@@ -17,5 +17,5 @@ type Project {
   liveSiteUrl: URL!
   githubUrl: URL!
   category: String! @search
-  createdBy: User!
+  createdBy: User! @relation
 }
